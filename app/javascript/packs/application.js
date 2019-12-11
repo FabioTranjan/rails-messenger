@@ -10,7 +10,7 @@ require("channels")
 
 import bulmaQuickview from "bulma-quickview/src/js"
 
-document.addEventListener("tubolinks:load", function() {
+document.addEventListener("turbolinks:load", function() {
   let quickviews = bulmaQuickview.attach()
 })
 
