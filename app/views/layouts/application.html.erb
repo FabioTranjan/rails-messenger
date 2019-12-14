@@ -15,8 +15,12 @@
     <nav class="navbar has-background-grey-dark has-text-white-ter">
       <div class="container">
         <div class="navbar-brand">
-          <div class="navbar-item has-text-white-ter">
-            <%= image_tag "logo-menu.png" %>
+	  <div class="navbar-item has-text-white-ter">
+	    <% if content_for?(:brand) %>
+	      <%= yield :brand %>
+	    <% else %>
+	      <%= image_tag "logo-menu.png" %>
+	    <% end %>
 	  </div>
 
 	  <div class="navbar-item has-text-white-ter has-text-weigth-bold is-size-5">
